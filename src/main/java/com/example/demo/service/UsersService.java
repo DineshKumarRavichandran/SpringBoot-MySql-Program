@@ -31,4 +31,8 @@ public class UsersService {
 	public Optional<Integer> getSalary(Integer id) {
 		return usersRepository.findSalaryById(id);
 	}
+	
+	public void deleteUser(Integer id) {
+		usersRepository.deleteById(id);
+	}
 }
